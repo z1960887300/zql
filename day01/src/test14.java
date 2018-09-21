@@ -1,6 +1,6 @@
 public class test14 {
     public static void main(String[] args) {
-        String s = "      ";
+        String s = "Today  ";
          int s1 = show(s);
         System.out.println(s1);
 
@@ -22,10 +22,6 @@ public class test14 {
             return 0;
         } else {
             String[] split = s.split(" ");
-            if (s.substring(s.length() - 1).equals(" ") && split[0].length()>0) {
-                String s1 = split[0];
-                return s1.length();
-            }
             int c = 0;
             for (int i = 0; i < split.length; i++) {
                 if(split[i].length() > 0){
